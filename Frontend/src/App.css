@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: 'Roboto',sans-serif;}
+
+.text-g{color:#3bb77e !important;}
+.btn-g{color: #fff !important; background-color: #3bb77e !important;}
+.btn-lg{color: #fff !important; background-color: #3bb77e !important;}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.card-border{
+  border: 1px solid #183661;
+  box-shadow: 5px 5px 5px #183661a7;
+}
+
+.show-between{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.show-flex{
+  width: 100%;
+  height: auto;
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.show-inline{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; 
+}
+.show-col-wrap{
+  padding: 0 0 0 20px;
+  max-width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0;
+  gap: 20px;
+}
+
+
+.snackbar-success {
+  background-color: #183661 !important; 
+  border: 3px solid gold;
+  border-radius: 10px;
+  color: greenyellow !important;
+}
+
+.snackbar-error {
+  border: 3px solid gold;
+  border-radius: 10px;
+  background-color: #183661 !important; 
+  color: #c62828 !important;
+}
+
+
+
+.inp {
+  height: 40px;
+  background-color: white;
+  display: flex;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  padding: 10px 0px;
+}
+
+
+
+.inp input {
+  padding: 10px 20px;
+  width: 240px;
+  height: 20px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  border:none;
+  outline: none;
+  position: relative;
+}
+
+.inp img {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 12%;
+  right: 20px;
+}
+
+.poster_div {
+  margin-left: 150px;
+  display: flex;
+}
+
+.poster {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(rgba(2, 17, 235, 0.298), rgba(217, 255, 0, 0.92));
+  background-repeat: no-repeat;
+}
+
+.poster h1 {
+  color: #183661;
+  font-size: 60px;
+  font-style: oblique;
+  margin-bottom: 0px;
+}
+
+.poster h2 {
+  margin: 0px;
+  padding-left: 20px;
+  color: #000;
+  font-family: cursive;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.poster img {
+  height: 400px;
+  /* width: 50%; */
+}
+
+.poster p {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #282c34;
+  font-family: sans-serif;
+}
+
+.poster button {
+  margin: 5px;
+  background-color: darkblue;
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid darkblue;
+  border-radius: 40px;
+}
+
+
+.Dashboard{height: 60vh; text-align: center;}
+.Dashboard h1{font-size: 72px;
+  background: -webkit-linear-gradient(right,#183661,violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+
+
+.adminDraw{height: 50px;text-align: center; background-color:#183661; color: gold; display: flex; justify-content:space-between; padding: 0px 40px; align-items: center;}
+
+
+
+
+
+
+
+
+
+
+
+.product_btn {
+  background-color: #183661;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 590px;
+  border: 1px solid #183661;
+  border-radius: 40px;
+}
+
+.fashion {
+  margin-top: 50px;
+  background-color: white;
+  height: 500px;
+  width: 100%;
+}
+
+.fashion img {
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe {
+  padding-top: 80px;
+  background-color: white;
+  height: 300px;
+  width: 100%;
+}
+
+.subscribe h1 {
+  margin-top: -10px;
+  padding-left: 40px;
+  color: #183661;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.subscribe input {
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  color: gray;
+}
+
+.subscribe button {
+  width: 150px;
+  height: 40px;
+  margin-top: 5px;
+  font-size: 20px;
+  border: 1px solid #183661;
+  border-radius: 20px;
+  background-color: #183661;
+  color: white;
+  margin-left: 325px;
+}
+
+
+
+.foot {
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  height: 60px;
+  font-family: sans-serif;
+  font-size: larger;
+  color: white;
+  background-color: #183661;
+}
+
+
+.about {
+  height: 700px;
+}
+
+.about h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+  height: 80px;
+  text-align: center;
+  color: white;
+  background-color: orange;
+}
+
+.about h2 {
+  color: #183661;
+  font-size: 30px;
+}
+
+.about p {
+  text-align: left;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.about img {
+  padding-top: 80px;
+  height: 400px;
+  width: 700px;
+}
+
+.about button {
+  margin-top: 10px;
+  background-color: #183661;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #183661;
+  border-radius: 40px;
+}
+
+
+/* From Uiverse.io by ammarsaa */
+
+.form button {
+  margin-left: 120px;
+  width: 120px;
+}
+
+.flex {
+  display: flex;
+  column-gap: 50px;
+}
+
+.form label {
+  font-weight: 600;
+  color: gold;
+}
+
+.form h2 {
+  color: gold;
+  text-shadow: 2px 2px #183661;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: darkblue;
+  color: gold;
+}
+
+.showproduct {
+  height: 600px;
+  width: 100%;
+  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  text-align: center;
+  color: #183661;
+}
+
+.showproduct img {
+  /* margin: top right bottom left; */
+  margin: 50px 0 0 50px;
+  border: 10px solid #183661;
+  border-radius: 250px;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+
+}
+
+.showproduct p {
+  font-family: cursive;
+  font-size: 20px;
+
+}
+
+.showproduct button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #183661;
+  color: white;
+  font-weight: 700;
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  border: 1px solid #183661;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.showproduct button:hover {
+  height: 42px;
+  width: 152px;
+  background-color: #2d7ff1;
+  border: 2px solid #2d7ff1;
+  cursor: pointer;
+}
+
+.logReg {
+  margin-left: 300px;
+  height: 100vh;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: gold;
+}
+
+.container {
+  margin: 10px 10px;
+  height: 100vh;
+  width: 500px;
+  background-color: #183661;
+  /* box-shadow: 8px -10px 20px #183661; */
+  position: relative;
+  overflow: hidden;
+}
+
+.btn {
+  /* margin-left: 20px; */
+  /* height:450px;
+  width: 80px; */
+  height: 60px;
+  width: 500px;
+  gap: 100px;
+  margin-top: 10px;
+  background-color: gold;
+  /* box-shadow: 10px -5px 10px rgba(2, 17, 235, 0.298); */
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* padding-top: 150px; */
+}
+
+.login,
+.signup {
+  font-size: 15px;
+  border: 10px solid #183661;
+  border-radius: 50px;
+  outline: none;
+  background-color: #183661;
+  color: gold;
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.login:active,
+.signup:active {
+  color: #183661;
+  background-color: gold;
+}
+
+.slider {
+  /* height: 60px;
+  width: 150px; */
+  border-radius: 50px;
+  background-image: linear-gradient(to right,
+      rgba(255, 217, 0, 0.641),
+      rgba(153, 205, 50, 0.579));
+  /* position: absolute; */
+  margin-top: 0px;
+  top: 20px;
+  left: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+.moveslider {
+  left: 250px;
+}
+
+.form-section {
+  height: 500px;
+  width: 1000px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  left: 0px;
+  gap: 100px;
+}
+
+.form-section label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-section-move {
+  left: -500px;
+}
+
+.login-box {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  gap: 50px;
+  border: 2px solid #183661;
+}
+
+.signup-box {
+  border: 2px solid #183661;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  gap: 30px;
+}
+
+.ele {
+  height: 30px;
+  width: 400px;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50px;
+  padding-left: 30px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.clkbtn {
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  margin-left: 150px;
+  background-color: gold;
+  color: #183661;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dashboard css starts here */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first baseline;
+  background-color: #183661;
+  color: gold;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 200px;
+  margin-left: -40px;
+  list-style-type: none;
+  cursor: pointer;
+  color: gold;
+  font-size: 20px;
+  /* border: 1px solid white; */
+  /* background-color: whitesmoke; */
+  margin-top: 15px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  color: #183661;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.draw ul {
+  list-style: none;
+}
+
+.draw ul li {
+  color: gold;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.draw img {
+  margin-top: 20px;
+  border: 10px solid gold;
+  height: 100px;
+  width: 120px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+
+
+/* Dashboard css ends here */
+
+
+
+

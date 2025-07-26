@@ -1,0 +1,26 @@
+.logo{font-family: cursive; font-size: 20px;  background-color: #183661; box-shadow: 0 2px 4px #183661; border-radius: 10px; color: gold; position: relative;}
+.logo img{height: 30px; width: 30px; border-radius: 50%; border: 1px solid gold; object-fit: contain; }
+.logo p{font-size: 14px;}
+.time svg{ font-size: 20px; position: absolute; bottom:0; right: 0; color: palevioletred; margin: 5px; animation: spin 2s linear infinite;}
+.viewProduct img{height: 80px; width: 80px; border: 3px solid white; border-radius: 20px;}
+.viewProduct:hover{cursor: pointer;}
+.topProductsWrapper{padding: 0px; margin: 0px ;}
+.topProducts{background-color: #183661; color: gold; margin: 2px 0px;box-shadow: 0 2px 4px #183661; border-radius: 10px; height: 200px; width: 300px !important; padding:0px; display: flex !important; align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+.topProducts img{ background-color: gold; height: 60%; width: 40%;  object-fit: contain; border: 5px solid white;  margin: 0px;}
+.topProducts h6{padding: 0 10px; margin: 0;}
+.topProducts svg{margin: 5px 0px; padding: 0;}
+.topProducts:hover{border: 2px solid gold; cursor: pointer;}
+
+.topProductsWrapper .slick-arrow{position: absolute;top: 50%; width: 20px !important; height: 20px !important; border-radius: 50%;background-color: lightgray; z-index: 100; transition: all 0.2s ease-in-out;box-shadow: 0 3px 6px rgba(197, 80, 80, 0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.topProductsWrapper .slick-next{right: 20px !important;}
+.topProductsWrapper .slick-prev{left: 20px !important;}
+.topProductsWrapper .slick-prev:before{content: "\f104" !important; font-family: FontAwesome; font-size: 15px;}
+.topProductsWrapper .slick-next:before{content: "\f105" !important; font-family: FontAwesome; font-size: 15px;}
+.topProductsWrapper .slick-arrow:hover{background-color: gold;}
+.topProductsWrapper .slick-dots{position: absolute; top: 300px; font-size: 5px;}
+.topProductsWrapper .slick-dots button{width: 50px !important; height: 10px !important; font-size: 10px !important;}
+.topProductsWrapper .slick-dots button::before{width: 50px !important; height: 15px !important; font-size: 10px !important;}
+.topProductsWrapper .slick-active button::before{color: #183661 !important;}
+.ImgWrapper{height: 200px; width: 200px;  }
+.ImgWrapper img{height: 80%; width: 80%; object-fit: contain; border: 2px solid #183661; border-radius: 50%;}
+
