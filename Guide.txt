@@ -1,0 +1,12 @@
+#To start project in one GO -
+
+@echo off
+
+echo ✅ Starting Django backend...
+cd backend\ecommerce
+start cmd /k "..\env\Scripts\activate && python manage.py runserver"
+
+cd ..\..  && cd frontend
+
+echo 🚀 Starting React frontend...
+start cmd /k "npm start"
