@@ -9,6 +9,7 @@ import ArrowCircleUpOutlinedIcon from '@mui/icons-material/ArrowCircleUpOutlined
 import DiscountIcon from '@mui/icons-material/Discount';
 import { useNavigate } from 'react-router-dom';
 import ShowLoginErrorMessage from '../ShowMessages/ShowLoginErrorMessage.js';
+import { PostViewData } from '../../API/ViewProductAPI/ViewProductAPI.js';
 
 function ProductoftheDay({ setproductId }) {
     const nav= useNavigate();
@@ -60,17 +61,25 @@ function ProductoftheDay({ setproductId }) {
     }
 
     
-
-    const handleView = async (product) => {
-        if (userData) {
-            const viewedProductData = {
-                customer: userData.email,
-                product: product.product_id,
-            };
-            const res = await PostData(viewedProductData)
-        }
-        nav('/productDetails', { state: product }, { replace: true })
+  const handleView = async (product) => {
+    try{
+      if (!userData?.email){
+         nav('/productDetails', { state: product, replace: true })
+         return;
+      } 
+      if (userData) {
+        const viewedProductData = {
+          customer: userData.email,
+          product: product.product_id,
+        };
+        const res = await PostViewData(viewedProductData)
+      }
+    }catch(error){
+      console.error("Error in ViewData ", error)
     }
+    nav('/productDetails', { state: product, replace: true })
+  }
+
    
 
     return (

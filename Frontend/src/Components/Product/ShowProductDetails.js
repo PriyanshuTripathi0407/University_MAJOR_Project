@@ -113,7 +113,7 @@ function ShowProductDetails({ setproductId }) {
           </div><hr />
           <div className='item'>
             <p><b>Category:</b></p>
-            <p>This product falls under the <b>{findProduct.product_category.id || "general merchandise"}</b> category, making it suitable for a variety of use cases.</p>
+            <p>This product falls under the <b>{findProduct?.product_category?.id || "general merchandise"}</b> category, making it suitable for a variety of use cases.</p>
           </div> <hr />
           <div className='item'>
             <p><b>Availability:</b></p>

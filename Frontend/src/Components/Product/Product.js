@@ -88,7 +88,7 @@ function Product({ setproductId }) {
 
   const handleGetData = async () => {
     const response = await getData()
-    // console.log("This is product in Product **", response)
+    console.log("This is product in Product **", response)
     setProductData(response.data);
   }
 
@@ -106,12 +106,20 @@ function Product({ setproductId }) {
   }
 
   const handleView = async (product) => {
-    if (userData) {
-      const viewedProductData = {
-        customer: userData.email,
-        product: product.product_id,
-      };
-      const res = await PostViewData(viewedProductData)
+    try{
+      if (!userData?.email){
+         nav('/productDetails', { state: product, replace: true })
+         return;
+      } 
+      if (userData) {
+        const viewedProductData = {
+          customer: userData.email,
+          product: product.product_id,
+        };
+        const res = await PostViewData(viewedProductData)
+      }
+    }catch(error){
+      console.error("Error in ViewData ", error)
     }
     nav('/productDetails', { state: product, replace: true })
   }
